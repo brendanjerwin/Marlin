@@ -108,7 +108,7 @@
 #define DELTA_DIAGONAL_ROD 200.0 // mm | 200 mm as built
 
 // Horizontal offset from middle of printer to smooth rod center.
-#define DELTA_SMOOTH_ROD_OFFSET 134.0 // mm | 135.518 mm from CAD (decrease to raise, increase to lower)
+#define DELTA_SMOOTH_ROD_OFFSET 133.54 // mm | 133.54 mm from CAD (decrease to raise, increase to lower)
 
 // Horizontal offset of the universal joints on the end effector.
 #define DELTA_EFFECTOR_OFFSET 22.872 // mm  | 22.872 mm from CAD
@@ -427,11 +427,11 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 
 // delta homing speeds must be the same on xyz
-#define HOMING_FEEDRATE {100*60, 100*60, 100*60, 0}  // set the homing speeds (mm/min)
+#define HOMING_FEEDRATE {70*60, 70*60, 70*60, 0}  // set the homing speeds (mm/min)
 
 // default settings
 // delta speeds must be the same on xyz
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {55.5, 55.5, 55.5, 47.14}  // default steps per unit for Kossel (GT2, 20 tooth)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {55.5, 55.5, 55.5, 97}  // default steps per unit for Kossel (GT2, 20 tooth)
 #define DEFAULT_MAX_FEEDRATE          {380, 380, 380, 45}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {500, 500, 500, 10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
